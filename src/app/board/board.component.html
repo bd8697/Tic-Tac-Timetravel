@@ -1,0 +1,5 @@
+<main [@boardAnim] = "boardState" #board>
+    <ng-container *ngFor="let fieldRow of fields; let row = index">
+        <app-field *ngFor="let field of fieldRow; let col = index" [content]="field" [isActive]="isActive" [won]="won(row, col)" (clicked) = "onClick()" (click)="isActive && act(row, col, boardIdx)"></app-field>
+    </ng-container>
+</main>

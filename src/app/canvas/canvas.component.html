@@ -1,0 +1,9 @@
+<div class="canvas">
+    <h1 class="toMove" [ngStyle] = "{'color' : turnColor}"> {{player}}'s turn.</h1>
+    <app-boards *ngIf="boardsInited"></app-boards>
+    <div class="winnerContainer">
+        <p *ngIf="winner" class="winner" [@flash]="animState" (@flash.done)="onEnd()">{{winner}} {{winner.length < 2 ? 'won ' : ''}} {{timesWonThisRound > 1 ? timesWonThisRound + ' times ' : ''}}!</p>
+        <button *ngIf="winner" nbButton outline class="btn" (click) = "onPlayAgain()"><nb-icon icon="refresh-outline" status="warning" class="ico"></nb-icon></button>
+    </div> 
+</div>
+

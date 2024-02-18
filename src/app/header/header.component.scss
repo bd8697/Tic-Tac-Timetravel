@@ -1,0 +1,24 @@
+h1 {
+    font-size: 7rem;
+    /* top | right | bottom | left */
+    margin: 1vw 2vw;
+}
+
+.titleContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vh;
+}
+
+.btn {
+    float: right;
+    margin-right: 1.5vw;
+    transform: scale(2.5) translateY(+65%);
+}
+
+.ico {
+    transform: scale(1.5);
+}

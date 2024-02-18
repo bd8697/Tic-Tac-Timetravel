@@ -1,0 +1,6 @@
+<div ngClass="field">
+    <button [ngStyle]="!isActive && {'background-color':'#0a0a0a'}" nbButton *ngIf="!content; else filled" (click) ="onClick()" (mouseenter) ="onMouseEnter()" (mouseleave) = "onMouseLeave()" > {{mouseIn? player : content}} </button>
+</div>
+
+<ng-template #filled ><button nbButton [ngStyle]="won && {'background-color': '#A0F144', 'font-size': '10rem'}" [status] = "status" class ="btn"> {{content}} </button>
+</ng-template>

@@ -1,0 +1,56 @@
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/dark';
+
+$nb-themes: nb-register-theme((
+
+  // add your variables here like:
+
+  color-basic-100: #0a0a0a,
+  color-basic-200: #525252,
+  color-basic-300: #525252,
+  color-basic-400: #525252,
+  color-basic-500: #0a0a0a,
+  color-basic-600: #0a0a0a,
+  color-basic-700: #0a0a0a,
+  color-basic-800: #0a0a0a,
+  color-basic-900: #1d1d1d,
+
+  background-basic-color-1: color-basic-700, // <- 800 by default
+  background-basic-color-2: color-basic-800, // <- 900 by default
+  background-basic-color-3: color-basic-900, // <- etc
+  background-basic-color-4: color-basic-500,
+
+  border-basic-color-1: color-basic-700,
+  border-basic-color-2: color-basic-800,
+  border-basic-color-3: color-basic-900,
+  border-basic-color-4: color-basic-500,
+
+  button-filled-basic-focus-background-color: color-basic-300,
+  button-outline-width: 0rem,
+
+  button-filled-success-text-color: #201f20,
+  button-filled-danger-text-color: #201f20,
+  button-outline-basic-background-color: rgba(255, 255, 255, 0),
+  button-filled-success-background-color: #4495f1,
+  button-filled-success-focus-background-color: #4495f1,
+  button-filled-success-hover-background-color: #78b1f3,
+  button-filled-success-active-background-color: #4495f1,
+  button-filled-danger-background-color: #F19D44,
+  button-filled-danger-focus-background-color: #F19D44,
+  button-filled-danger-hover-background-color: #f1b87b,
+  button-filled-danger-active-background-color: #F19D44,
+
+  button-medium-text-font-size: 5rem,
+  button-text-font-family: Indie Flower,
+
+  shadow: 0 0.5rem 1rem 0 color-basic-500,
+
+  font-family-primary: 'Kaushan Script',
+  text-basic-color: #A0F144,
+  icon-warning-color: #F19D44,
+  tooltip-warning-background-color: #F19D44,
+  text-caption-font-family: font-family-primary,
+  text-caption-font-size: 2.5rem,
+  text-caption-line-height: 2rem,
+
+), v, dark);
